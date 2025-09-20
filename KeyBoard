@@ -1,0 +1,26 @@
+#KeyBoard
+
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+
+main = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text='⚙️ Настройки'),
+            KeyboardButton(text='📞 Поддержка'),
+            KeyboardButton(text='🔙 Выход'),
+        ]
+    ],
+    resize_keyboard=True
+)
+
+settings_menu = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text='🌐 Язык'),
+            KeyboardButton(text='🔔 Уведомления'),
+            KeyboardButton(text='🔙 Назад'),
+        ]
+
+    ],
+    resize_keyboard=True
+)
